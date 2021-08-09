@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleShodModels", "SimpleShodModels\SimpleShodModels.csproj", "{DB20F9E1-E665-45E4-88ED-7DEA941DB513}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB20F9E1-E665-45E4-88ED-7DEA941DB513}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB20F9E1-E665-45E4-88ED-7DEA941DB513}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB20F9E1-E665-45E4-88ED-7DEA941DB513}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB20F9E1-E665-45E4-88ED-7DEA941DB513}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {16C979E0-B969-4CBD-97FA-7B9416F0DD33}
+	EndGlobalSection
+EndGlobal
