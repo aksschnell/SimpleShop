@@ -1,1 +1,0 @@
-# SimpleShop Example Projekt
