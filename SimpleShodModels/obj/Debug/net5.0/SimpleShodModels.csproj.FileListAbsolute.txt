@@ -1,0 +1,12 @@
+C:\Users\HFGF\Desktop\Projekter\SimpleShop\SimpleShodModels\bin\Debug\net5.0\SimpleShodModels.deps.json
+C:\Users\HFGF\Desktop\Projekter\SimpleShop\SimpleShodModels\bin\Debug\net5.0\SimpleShodModels.dll
+C:\Users\HFGF\Desktop\Projekter\SimpleShop\SimpleShodModels\bin\Debug\net5.0\ref\SimpleShodModels.dll
+C:\Users\HFGF\Desktop\Projekter\SimpleShop\SimpleShodModels\bin\Debug\net5.0\SimpleShodModels.pdb
+C:\Users\HFGF\Desktop\Projekter\SimpleShop\SimpleShodModels\obj\Debug\net5.0\SimpleShodModels.csproj.AssemblyReference.cache
+C:\Users\HFGF\Desktop\Projekter\SimpleShop\SimpleShodModels\obj\Debug\net5.0\SimpleShodModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HFGF\Desktop\Projekter\SimpleShop\SimpleShodModels\obj\Debug\net5.0\SimpleShodModels.AssemblyInfoInputs.cache
+C:\Users\HFGF\Desktop\Projekter\SimpleShop\SimpleShodModels\obj\Debug\net5.0\SimpleShodModels.AssemblyInfo.cs
+C:\Users\HFGF\Desktop\Projekter\SimpleShop\SimpleShodModels\obj\Debug\net5.0\SimpleShodModels.csproj.CoreCompileInputs.cache
+C:\Users\HFGF\Desktop\Projekter\SimpleShop\SimpleShodModels\obj\Debug\net5.0\SimpleShodModels.dll
+C:\Users\HFGF\Desktop\Projekter\SimpleShop\SimpleShodModels\obj\Debug\net5.0\ref\SimpleShodModels.dll
+C:\Users\HFGF\Desktop\Projekter\SimpleShop\SimpleShodModels\obj\Debug\net5.0\SimpleShodModels.pdb
