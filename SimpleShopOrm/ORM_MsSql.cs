@@ -70,17 +70,116 @@ namespace SimpleShopOrm
 
         public List<Customer> GetCustomers()
         {
-            throw new NotImplementedException();
+            
+            List<Customer> Customers = new List<Customer>();
+            string query = "SELECT id, navn from kunde";
+            SqlCommand cmd = new SqlCommand(query, dbConn);
+
+
+
+            if (dbConn.State == System.Data.ConnectionState.Closed)
+            {
+                try
+                {
+                    dbConn.Open();
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception(ex.Message);
+                }
+
+                SqlDataReader reader = cmd.ExecuteReader(System.Data.CommandBehavior.CloseConnection);
+                int i = 0;
+                while (reader.Read())
+                {  
+                    Customer customer = new Customer(reader.GetInt32(0), reader.GetString(1));
+                    Customers.Add(customer);
+                    i++;
+                }
+
+              
+
+            }
+
+
+            return Customers;
+
+
         }
 
         public Product GetProduct(int id)
         {
-            throw new NotImplementedException();
+            Product product = null;
+
+
+
+            string query = "SELECT id, navn, pris from produkt where id = @val";
+            SqlCommand cmd = new SqlCommand(query, dbConn);
+            cmd.Parameters.AddWithValue("@val", id);
+
+
+            if (dbConn.State == System.Data.ConnectionState.Closed)
+            {
+                try
+                {
+                    dbConn.Open();
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception(ex.Message);
+                }
+
+                SqlDataReader reader = cmd.ExecuteReader(System.Data.CommandBehavior.CloseConnection);
+                int i = 0;
+                while (reader.Read())
+                {
+                    product = new Product(reader.GetInt32(0), reader.GetString(1), reader.GetDecimal(2));
+                    i++;
+                }
+
+                if (i != 1) return null;
+
+            }
+
+
+            return product;
         }
 
         public List<Product> GetProducts()
         {
-            throw new NotImplementedException();
+            
+            List<Product> Products = new List<Product>();
+            string query = "SELECT id, navn, pris from produkt";
+            SqlCommand cmd = new SqlCommand(query, dbConn);
+
+
+
+            if (dbConn.State == System.Data.ConnectionState.Closed)
+            {
+                try
+                {
+                    dbConn.Open();
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception(ex.Message);
+                }
+
+                SqlDataReader reader = cmd.ExecuteReader(System.Data.CommandBehavior.CloseConnection);
+                int i = 0;
+                while (reader.Read())
+                {  
+                    Product product = new Product(reader.GetInt32(0), reader.GetString(1), reader.GetDecimal(2));
+                    Products.Add(product);
+                    i++;
+                }
+
+              
+
+            }
+
+
+            return Products;
         }
     }
 }
