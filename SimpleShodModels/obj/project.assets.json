@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HFGF\\Desktop\\Projekter\\SimpleShop\\SimpleShodModels\\SimpleShodModels.csproj",
-      "projectName": "SimpleShodModels",
-      "projectPath": "C:\\Users\\HFGF\\Desktop\\Projekter\\SimpleShop\\SimpleShodModels\\SimpleShodModels.csproj",
+      "projectUniqueName": "C:\\Users\\HFGF\\Desktop\\Projekter\\SimpleShop\\SimpleShodModels\\SimpleShopModels.csproj",
+      "projectName": "SimpleShopModels",
+      "projectPath": "C:\\Users\\HFGF\\Desktop\\Projekter\\SimpleShop\\SimpleShodModels\\SimpleShopModels.csproj",
       "packagesPath": "C:\\Users\\HFGF\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\HFGF\\Desktop\\Projekter\\SimpleShop\\SimpleShodModels\\obj\\",
       "projectStyle": "PackageReference",

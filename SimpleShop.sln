@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31515.178
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleShodModels", "SimpleShodModels\SimpleShodModels.csproj", "{DB20F9E1-E665-45E4-88ED-7DEA941DB513}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleShopModels", "SimpleShodModels\SimpleShopModels.csproj", "{DB20F9E1-E665-45E4-88ED-7DEA941DB513}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleShopOrm", "SimpleShopOrm\SimpleShopOrm.csproj", "{A1832762-698F-48BA-A2B4-34D188519043}"
 EndProject
