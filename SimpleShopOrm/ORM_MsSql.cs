@@ -12,10 +12,10 @@ namespace SimpleShopOrm
     {
 
         private SqlConnection dbConn;
-        private string host;
-        private string username;
-        private string password;
-        private string database;
+        private string host = "10.142.69.56";
+        private string username = "SimpleShop";
+        private string password  = "SimpleShop";
+        private string database = "SimpleShop";
 
 
         public ORM_MsSql()
@@ -28,12 +28,44 @@ namespace SimpleShopOrm
                 DataSource = host
 
             };
+
+            dbConn = new SqlConnection(conString.ToString());
         }
 
 
         public Customer GetCustomer(int id)
         {
-            throw new NotImplementedException();
+            Customer customer = null;
+
+
+            string query = "SELECT id, navn from kunde where id = @val";
+            SqlCommand cmd = new SqlCommand(query, dbConn);
+            cmd.Parameters.AddWithValue("@val", id);
+
+
+            if(dbConn.State == System.Data.ConnectionState.Closed)
+            {
+                try { 
+                dbConn.Open();
+                }catch (Exception ex)
+                {
+                    throw new Exception(ex.Message);
+                }
+
+                SqlDataReader reader = cmd.ExecuteReader(System.Data.CommandBehavior.CloseConnection);
+                int i = 0;
+                while (reader.Read())
+                {
+                    customer = new Customer(reader.GetInt32(0),reader.GetString(1));
+                    i++;
+                }
+
+                if (i != 1) return null;
+
+            }
+
+
+            return customer;
         }
 
         public List<Customer> GetCustomers()

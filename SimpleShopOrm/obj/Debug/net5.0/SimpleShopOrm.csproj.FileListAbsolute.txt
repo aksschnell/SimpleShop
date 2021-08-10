@@ -1,0 +1,15 @@
+C:\Users\HFGF\Desktop\Projekter\SimpleShop\SimpleShopOrm\bin\Debug\net5.0\SimpleShopOrm.deps.json
+C:\Users\HFGF\Desktop\Projekter\SimpleShop\SimpleShopOrm\bin\Debug\net5.0\SimpleShopOrm.dll
+C:\Users\HFGF\Desktop\Projekter\SimpleShop\SimpleShopOrm\bin\Debug\net5.0\ref\SimpleShopOrm.dll
+C:\Users\HFGF\Desktop\Projekter\SimpleShop\SimpleShopOrm\bin\Debug\net5.0\SimpleShopOrm.pdb
+C:\Users\HFGF\Desktop\Projekter\SimpleShop\SimpleShopOrm\bin\Debug\net5.0\SimpleShopModels.dll
+C:\Users\HFGF\Desktop\Projekter\SimpleShop\SimpleShopOrm\bin\Debug\net5.0\SimpleShopModels.pdb
+C:\Users\HFGF\Desktop\Projekter\SimpleShop\SimpleShopOrm\obj\Debug\net5.0\SimpleShopOrm.csproj.AssemblyReference.cache
+C:\Users\HFGF\Desktop\Projekter\SimpleShop\SimpleShopOrm\obj\Debug\net5.0\SimpleShopOrm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HFGF\Desktop\Projekter\SimpleShop\SimpleShopOrm\obj\Debug\net5.0\SimpleShopOrm.AssemblyInfoInputs.cache
+C:\Users\HFGF\Desktop\Projekter\SimpleShop\SimpleShopOrm\obj\Debug\net5.0\SimpleShopOrm.AssemblyInfo.cs
+C:\Users\HFGF\Desktop\Projekter\SimpleShop\SimpleShopOrm\obj\Debug\net5.0\SimpleShopOrm.csproj.CoreCompileInputs.cache
+C:\Users\HFGF\Desktop\Projekter\SimpleShop\SimpleShopOrm\obj\Debug\net5.0\SimpleShopOrm.csproj.CopyComplete
+C:\Users\HFGF\Desktop\Projekter\SimpleShop\SimpleShopOrm\obj\Debug\net5.0\SimpleShopOrm.dll
+C:\Users\HFGF\Desktop\Projekter\SimpleShop\SimpleShopOrm\obj\Debug\net5.0\ref\SimpleShopOrm.dll
+C:\Users\HFGF\Desktop\Projekter\SimpleShop\SimpleShopOrm\obj\Debug\net5.0\SimpleShopOrm.pdb
