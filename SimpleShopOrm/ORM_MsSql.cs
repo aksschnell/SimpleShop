@@ -1,4 +1,5 @@
 ﻿using SimpleShodModels;
+using SimpleShopModels;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -12,10 +13,10 @@ namespace SimpleShopOrm
     {
 
         private SqlConnection dbConn;
-        private string host = "10.142.69.56";
-        private string username = "SimpleShop";
-        private string password  = "SimpleShop";
-        private string database = "SimpleShop";
+        private string host = "localhost";
+        private string username = "Uber";
+        private string password  = "testtest";
+        private string database = "Elgiganten";
 
 
         public ORM_MsSql()
@@ -31,11 +32,11 @@ namespace SimpleShopOrm
 
             dbConn = new SqlConnection(conString.ToString());
         }
+      
 
-
-        public Customer GetCustomer(int id)
+        public Kunde GetCustomer(int id)
         {
-            Customer customer = null;
+            Kunde customer = null;
 
 
             string query = "SELECT id, navn from kunde where id = @val";
@@ -56,9 +57,11 @@ namespace SimpleShopOrm
                 int i = 0;
                 while (reader.Read())
                 {
-                    customer = new Customer(reader.GetInt32(0),reader.GetString(1));
+                    customer = new Kunde(reader.GetInt32(0),reader.GetString(1));
                     i++;
                 }
+
+                reader.Close();
 
                 if (i != 1) return null;
 
@@ -68,10 +71,10 @@ namespace SimpleShopOrm
             return customer;
         }
 
-        public List<Customer> GetCustomers()
+        public List<Kunde> GetCustomers()
         {
             
-            List<Customer> Customers = new List<Customer>();
+            List<Kunde> Customers = new List<Kunde>();
             string query = "SELECT id, navn from kunde";
             SqlCommand cmd = new SqlCommand(query, dbConn);
 
@@ -92,12 +95,14 @@ namespace SimpleShopOrm
                 int i = 0;
                 while (reader.Read())
                 {  
-                    Customer customer = new Customer(reader.GetInt32(0), reader.GetString(1));
+                    Kunde customer = new Kunde(reader.GetInt32(0), reader.GetString(1));
                     Customers.Add(customer);
                     i++;
                 }
 
-              
+
+                reader.Close();
+
 
             }
 
@@ -107,9 +112,9 @@ namespace SimpleShopOrm
 
         }
 
-        public Product GetProduct(int id)
+        public Produkt GetProduct(int id)
         {
-            Product product = null;
+            Produkt product = null;
 
 
 
@@ -133,9 +138,12 @@ namespace SimpleShopOrm
                 int i = 0;
                 while (reader.Read())
                 {
-                    product = new Product(reader.GetInt32(0), reader.GetString(1), reader.GetDecimal(2));
+                    product = new Produkt(reader.GetInt32(0), reader.GetString(1), reader.GetDecimal(2));
                     i++;
                 }
+
+
+                reader.Close();
 
                 if (i != 1) return null;
 
@@ -145,11 +153,11 @@ namespace SimpleShopOrm
             return product;
         }
 
-        public List<Product> GetProducts()
+        public List<Produkt> GetProducts()
         {
             
-            List<Product> Products = new List<Product>();
-            string query = "SELECT id, navn, pris from produkt";
+            List<Produkt> Products = new List<Produkt>();
+            string query = "SELECT id, navn, pris from produkter";
             SqlCommand cmd = new SqlCommand(query, dbConn);
 
 
@@ -169,17 +177,61 @@ namespace SimpleShopOrm
                 int i = 0;
                 while (reader.Read())
                 {  
-                    Product product = new Product(reader.GetInt32(0), reader.GetString(1), reader.GetDecimal(2));
+                    Produkt product = new Produkt(reader.GetInt32(0), reader.GetString(1), reader.GetDecimal(2));
                     Products.Add(product);
                     i++;
                 }
+
+                reader.Close();
 
               
 
             }
 
 
-            return Products;
+            return Products;        
+
+
+        }
+
+
+        public List<Afdeling> GetAfdelinger()
+        {
+
+            List<Afdeling> Afdelinger = new List<Afdeling>();
+            string query = "SELECT id, Afdelingsnavn from Afdelinger";
+            SqlCommand cmd = new SqlCommand(query, dbConn);
+
+
+
+            if (dbConn.State == System.Data.ConnectionState.Closed)
+            {
+                try
+                {
+                    dbConn.Open();
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception(ex.Message);
+                }
+
+                SqlDataReader reader = cmd.ExecuteReader(System.Data.CommandBehavior.CloseConnection);
+                int i = 0;
+                while (reader.Read())
+                {
+                    Afdeling afdeling = new Afdeling(reader.GetInt32(0), reader.GetString(1));
+                    Afdelinger.Add(afdeling);
+                    i++;
+                }
+
+                reader.Close();
+
+
+
+            }
+
+
+            return Afdelinger;
         }
     }
 }

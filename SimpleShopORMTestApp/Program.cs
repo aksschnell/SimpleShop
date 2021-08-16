@@ -1,4 +1,5 @@
 ﻿using SimpleShodModels;
+using SimpleShopModels;
 using SimpleShopOrm;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,11 @@ namespace SimpleShopORMTestApp
 
             int currentId = 0;
             ORM_MsSql ORM = new ORM_MsSql();
+
+
+
+
+
 
             //Console.WriteLine("indtast et kunde ID");
             //currentId = int.Parse(Console.ReadLine());
@@ -38,14 +44,23 @@ namespace SimpleShopORMTestApp
 
 
 
-            List<Product> Products = ORM.GetProducts();
+            List<Produkt> Products = ORM.GetProducts();
 
-            for (int i = 0; i < Products.Count; i++)
+            //for (int i = 0; i < Products.Count; i++)
+            //{
+
+            //    Console.WriteLine(Products[i].ProduktNavn);
+            //}
+
+
+            List<Afdeling> Afdelinger = ORM.GetAfdelinger();
+
+
+            for (int i = 0; i < Afdelinger.Count; i++)
             {
 
-                Console.WriteLine(Products[i].ProductName);
+                Console.WriteLine(Afdelinger[i].Afdelingsnavn);
             }
-
 
 
 

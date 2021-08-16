@@ -9,3 +9,4 @@ C:\Users\HFGF\Desktop\Projekter\SimpleShop\SimpleShodModels\obj\Debug\net5.0\Sim
 C:\Users\HFGF\Desktop\Projekter\SimpleShop\SimpleShodModels\obj\Debug\net5.0\SimpleShopModels.dll
 C:\Users\HFGF\Desktop\Projekter\SimpleShop\SimpleShodModels\obj\Debug\net5.0\ref\SimpleShopModels.dll
 C:\Users\HFGF\Desktop\Projekter\SimpleShop\SimpleShodModels\obj\Debug\net5.0\SimpleShopModels.pdb
+C:\Users\HFGF\Desktop\Projekter\SimpleShop\SimpleShodModels\obj\Debug\net5.0\SimpleShopModels.csproj.AssemblyReference.cache

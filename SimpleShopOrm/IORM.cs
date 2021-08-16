@@ -1,4 +1,5 @@
 ﻿using SimpleShodModels;
+using SimpleShopModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,9 +10,14 @@ namespace SimpleShopOrm
 {
     public interface IORM
     {
-        public List<Customer> GetCustomers();
-        public Customer GetCustomer(int id);
-        public List<Product> GetProducts();
-        public Product GetProduct(int id);
+        public List<Kunde> GetCustomers();
+        public Kunde GetCustomer(int id);
+        public List<Produkt> GetProducts();
+        public Produkt GetProduct(int id);
+
+        public List<Afdeling> GetAfdelinger();
+      
+
+
     }
 }
