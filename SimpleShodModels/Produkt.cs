@@ -13,7 +13,7 @@ namespace SimpleShodModels
         public int ProduktId { get; private set; }
         public string ProduktNavn { get; set; }
 
-        public Afdeling Afdeling { get; set; }
+      
 
         public decimal ProduktPris { get; set; }
 
@@ -21,29 +21,22 @@ namespace SimpleShodModels
         public Produkt(string produktnavn, decimal produktpris)
         {
             ProduktNavn = produktnavn;
+            ProduktPris = produktpris;   
+
+        }
+
+
+        public Produkt(int produktid, string produktnavn, decimal produktpris)
+        {
+            ProduktId = produktid;
+            ProduktNavn = produktnavn;
             ProduktPris = produktpris;
-   
-        }
-
-
-        public Produkt(int id, string name, decimal price)
-        {
-            ProduktId = id;
-            ProduktNavn = name;
-            ProduktPris = price;
 
         }
 
 
 
-        public Produkt(string name, decimal price, Afdeling afdeling)
-        {
-            ProduktNavn = name;
-            ProduktPris = price;
-            Afdeling = afdeling;
-        }
-
-        
+      
         public void SetId(int id)
         {
             ProduktId = id;

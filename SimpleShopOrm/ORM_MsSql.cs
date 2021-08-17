@@ -240,9 +240,11 @@ namespace SimpleShopOrm
             SqlCommand cmd = new SqlCommand(query, dbConn);
             cmd.Parameters.AddWithValue("@val1", produkt.ProduktNavn);
             cmd.Parameters.AddWithValue("@val2", produkt.ProduktPris);
+          
 
 
-            if(dbConn.State == System.Data.ConnectionState.Closed)
+
+            if (dbConn.State == System.Data.ConnectionState.Closed)
             {
                 try
                 {

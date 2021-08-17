@@ -12,6 +12,9 @@ namespace SimpleShopModels
         public string Afdelingsnavn { get; set; }
 
 
+       //TILFØJ ARRAY OVER PRODUKTER HER DIN MONGOL
+
+
 
         public Afdeling(string beskrivelse)
         {

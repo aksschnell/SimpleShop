@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "l5rVCbJuxi/SQ3cebTL9MqqBLbSA9IN33H83dLEbAJPI3j0mtZQ3ZU+RcGTa5qeSW1Pccze3sW5JUaVYDWrBfA==",
+  "dgSpecHash": "vUlMy3e5wqgg5OxqbDenp03ehYixHvYTnV8HPx2rvh1xnciBf0JzbdKMc6AB4QdYqEIlmuIavuk+5d3imddB6w==",
   "success": true,
   "projectFilePath": "C:\\Users\\HFGF\\Desktop\\Projekter\\SimpleShop\\SimpleShodModels\\SimpleShopModels.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\HFGF\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\HFGF\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\HFGF\\.nuget\\packages\\swashbuckle.aspnetcore\\6.1.5\\swashbuckle.aspnetcore.6.1.5.nupkg.sha512",
+    "C:\\Users\\HFGF\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.1.5\\swashbuckle.aspnetcore.swagger.6.1.5.nupkg.sha512",
+    "C:\\Users\\HFGF\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.1.5\\swashbuckle.aspnetcore.swaggergen.6.1.5.nupkg.sha512",
+    "C:\\Users\\HFGF\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.1.5\\swashbuckle.aspnetcore.swaggerui.6.1.5.nupkg.sha512"
+  ],
   "logs": []
 }
