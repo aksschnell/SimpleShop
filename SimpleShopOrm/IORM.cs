@@ -15,7 +15,12 @@ namespace SimpleShopOrm
         public List<Produkt> GetProducts();
         public Produkt GetProduct(int id);
 
+        public Produkt CreateProdukt(Produkt produkt);
+
         public List<Afdeling> GetAfdelinger();
+
+
+       
       
 
 

@@ -118,7 +118,7 @@ namespace SimpleShopOrm
 
 
 
-            string query = "SELECT id, navn, pris from produkt where id = @val";
+            string query = "SELECT id, navn, pris from produkter where id = @val";
             SqlCommand cmd = new SqlCommand(query, dbConn);
             cmd.Parameters.AddWithValue("@val", id);
 
@@ -232,6 +232,31 @@ namespace SimpleShopOrm
 
 
             return Afdelinger;
+        }
+
+        public Produkt CreateProdukt(Produkt produkt)
+        {
+            string query = "INSERT INTO produkter (navn,pris) VALUES (@val1, @val2); SELECT SCOPE_IDENTITY() AS id";
+            SqlCommand cmd = new SqlCommand(query, dbConn);
+            cmd.Parameters.AddWithValue("@val1", produkt.ProduktNavn);
+            cmd.Parameters.AddWithValue("@val2", produkt.ProduktPris);
+
+
+            if(dbConn.State == System.Data.ConnectionState.Closed)
+            {
+                try
+                {
+                    dbConn.Open();
+                } catch (Exception ex)
+                {
+                    throw new Exception(ex.Message);
+                }
+            }
+
+            produkt.SetId(Convert.ToInt32(cmd.ExecuteScalar()));
+            dbConn.Close();
+            return produkt;
+
         }
     }
 }
