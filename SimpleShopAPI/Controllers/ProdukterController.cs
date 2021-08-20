@@ -7,17 +7,18 @@ using System.Threading.Tasks;
 using SimpleShodModels;
 using SimpleShopModels;
 using SimpleShopOrm;
+using System.Net.Http;
 
 
 namespace SimpleShopAPI.Controllers
 {
     [Route("[controller]")]
     [ApiController]
-    public class ProductsController : ControllerBase
+    public class ProdukterController : ControllerBase
     {
         private readonly ORM_MsSql ORM;
 
-        public ProductsController()
+        public ProdukterController()
         {
            ORM = new ORM_MsSql();
         }
@@ -45,9 +46,6 @@ namespace SimpleShopAPI.Controllers
 
 
 
-
-
-
         [HttpGet("{id}")]
         public ActionResult<Produkt> Get(int id)
         {
@@ -71,18 +69,48 @@ namespace SimpleShopAPI.Controllers
         }
 
 
-
-
-
         [HttpPost]
         public ActionResult<Produkt> Post([FromBody] Produkt produkt)
         {
             ORM.CreateProdukt(produkt);
             return produkt;
         }
-        
 
 
+
+        [HttpPut("{id}")]
+        public ActionResult<Produkt> Put(int id, [FromBody] Produkt produkt)
+        {
+            produkt.SetId(id);
+            ORM.EditProduct(produkt);
+            return produkt;
+        }
+
+
+
+        [HttpDelete("{id}")]
+        public ActionResult Delete(int id)
+        {           
+
+            if(ORM.DeleteProduct(id) == true)
+            {
+                return Ok();
+            }
+            else
+            {
+                return NotFound();
+            }                        
+            
+        }
 
     }
+
+
+
+
+
+
+
+
+
 }

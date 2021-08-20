@@ -12,13 +12,26 @@ namespace SimpleShodModels
         public OrdreStatus OrderStatus { get; set; }
         public List<Produkt> Produkter { get; set; }
 
-        
+        public int Leveringsfirma { get; set; }
+        public int KundeID { get; set; }
 
-        public Ordre(OrdreStatus status)
+
+
+        public Ordre(OrdreStatus orderstatus, List<Produkt>produkter)
         {
-            OrderStatus = status;
-
+            OrderStatus = orderstatus;
+            Produkter = produkter;
         }
+
+        public Ordre(int orderid, OrdreStatus orderstatus, List<Produkt> produkter)
+        {
+            OrderStatus = orderstatus;
+            Produkter = produkter;
+        }
+
+
+
+
 
     }
 }

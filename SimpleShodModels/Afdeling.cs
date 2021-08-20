@@ -1,7 +1,9 @@
-﻿using System;
+﻿using SimpleShodModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace SimpleShopModels
@@ -11,23 +13,21 @@ namespace SimpleShopModels
         public int AfdelingsId { get; set; }
         public string Afdelingsnavn { get; set; }
 
+        public List<Produkt> Produkter { get; set; }
 
-       //TILFØJ ARRAY OVER PRODUKTER HER DIN MONGOL
-
-
-
-        public Afdeling(string beskrivelse)
+        [JsonConstructor]
+        public Afdeling(string afdelingsnavn, List<Produkt> produkter)
         {
-            Afdelingsnavn = beskrivelse;
+            Afdelingsnavn = afdelingsnavn;
+            Produkter = produkter;
         }
 
-        public Afdeling(int id, string beskrivelse)
+        public Afdeling(int afdelingsid, string afdelingsnavn, List<Produkt> produkter)
         {
-            AfdelingsId = id;
-            Afdelingsnavn = beskrivelse;
-
+            AfdelingsId = afdelingsid;
+            Afdelingsnavn = afdelingsnavn;
+            Produkter = produkter;
         }
-        
 
     }
 }

@@ -10,10 +10,8 @@ namespace SimpleShodModels
 {
     public class Produkt
     {
-        public int ProduktId { get; private set; }
-        public string ProduktNavn { get; set; }
-
-      
+        public int ProduktId { get; set; }
+        public string ProduktNavn { get; set; }      
 
         public decimal ProduktPris { get; set; }
 
@@ -22,18 +20,14 @@ namespace SimpleShodModels
         {
             ProduktNavn = produktnavn;
             ProduktPris = produktpris;   
-
         }
-
-
+                
         public Produkt(int produktid, string produktnavn, decimal produktpris)
         {
             ProduktId = produktid;
             ProduktNavn = produktnavn;
             ProduktPris = produktpris;
-
         }
-
 
 
       

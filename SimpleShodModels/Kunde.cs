@@ -2,28 +2,50 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
+using SimpleShopModels;
 
 namespace SimpleShodModels
 {
     public class Kunde
     {
-        public int KundeId { get; set; }
+        public int KundeId { get; private set; }
         public string KundeNavn{ get; set; }
 
-        public List<Ordre> Ordrere { get; set; }
+        public string Gade { get; set; }
 
+        public PostBy Postby { get; set; }
 
+      
+
+        
         // Constructor
-        public Kunde(string name)
+        [JsonConstructor]
+        public Kunde(string kundenavn, string gade, PostBy postby)
         {
-            KundeNavn = name;
+            KundeNavn = kundenavn;
+            Gade = gade;
+            Postby = postby;
+            
         }
 
-        public Kunde(int id, string name)
+        public Kunde(int kundeid, string kundenavn, string gade, PostBy postby)
+        {
+            KundeId = kundeid;
+            KundeNavn = kundenavn;
+            Gade = gade;
+            Postby = postby;
+           
+        }
+
+
+
+        public void SetId(int id)
         {
             KundeId = id;
-            KundeNavn = name;
         }
+
+
     }
 }
