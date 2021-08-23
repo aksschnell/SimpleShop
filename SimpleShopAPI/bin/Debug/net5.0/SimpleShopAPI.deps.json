@@ -33,6 +33,7 @@
     ".NETCoreApp,Version=v5.0": {
       "SimpleShopAPI/1.0.0": {
         "dependencies": {
+          "IdentityServer3": "2.6.3",
           "SimpleShopModels": "1.0.0",
           "SimpleShopOrm": "1.0.0",
           "Swashbuckle.AspNetCore": "6.1.5",
@@ -327,6 +328,20 @@
           "SimpleShopAPI.dll": {}
         }
       },
+      "IdentityServer3/2.6.3": {
+        "dependencies": {
+          "Owin": "1.0.0"
+        },
+        "runtime": {
+          "lib/net45/IdentityServer3.dll": {
+            "assemblyVersion": "2.6.0.0",
+            "fileVersion": "2.6.3.0"
+          }
+        },
+        "compile": {
+          "lib/net45/IdentityServer3.dll": {}
+        }
+      },
       "Microsoft.Extensions.ApiDescription.Server/3.0.0": {},
       "Microsoft.NETCore.Platforms/3.1.0": {},
       "Microsoft.OpenApi/1.2.3": {
@@ -344,6 +359,17 @@
         "dependencies": {
           "System.Security.AccessControl": "4.7.0",
           "System.Security.Principal.Windows": "4.7.0"
+        }
+      },
+      "Owin/1.0.0": {
+        "runtime": {
+          "lib/net40/Owin.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/net40/Owin.dll": {}
         }
       },
       "runtime.native.System.Data.SqlClient.sni/4.7.0": {
@@ -2194,6 +2220,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "IdentityServer3/2.6.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TrxCgPjJoSwg32313OOOmR6Nx+m6MQb9WH0hj8dhICW9+LtFzcP6akCwYpQbW0ZN/REnQ7WJ71GLmOGuxckzKw==",
+      "path": "identityserver3/2.6.3",
+      "hashPath": "identityserver3.2.6.3.nupkg.sha512"
+    },
     "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
       "type": "package",
       "serviceable": true,
@@ -2221,6 +2254,13 @@
       "sha512": "sha512-KSrRMb5vNi0CWSGG1++id2ZOs/1QhRqROt+qgbEAdQuGjGrFcl4AOl4/exGPUYz2wUnU42nvJqon1T3U0kPXLA==",
       "path": "microsoft.win32.registry/4.7.0",
       "hashPath": "microsoft.win32.registry.4.7.0.nupkg.sha512"
+    },
+    "Owin/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OseTFniKmyp76mEzOBwIKGBRS5eMoYNkMKaMXOpxx9jv88+b6mh1rSaw43vjBOItNhaLFG3d0a20PfHyibH5sw==",
+      "path": "owin/1.0.0",
+      "hashPath": "owin.1.0.0.nupkg.sha512"
     },
     "runtime.native.System.Data.SqlClient.sni/4.7.0": {
       "type": "package",

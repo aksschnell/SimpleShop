@@ -37,3 +37,5 @@ C:\Users\HFGF\Desktop\Projekter\SimpleShop\SimpleShopAPI\bin\Debug\net5.0\Swashb
 C:\Users\HFGF\Desktop\Projekter\SimpleShop\SimpleShopAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\HFGF\Desktop\Projekter\SimpleShop\SimpleShopAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\HFGF\Desktop\Projekter\SimpleShop\SimpleShopAPI\obj\Debug\net5.0\SimpleShopAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\HFGF\Desktop\Projekter\SimpleShop\SimpleShopAPI\bin\Debug\net5.0\IdentityServer3.dll
+C:\Users\HFGF\Desktop\Projekter\SimpleShop\SimpleShopAPI\bin\Debug\net5.0\Owin.dll

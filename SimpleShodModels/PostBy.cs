@@ -9,7 +9,7 @@ namespace SimpleShopModels
 {
     public class PostBy
     {
-        public int PostNR { get; set; }
+        public int PostNR { get; set; } 
         public string By_navn { get;  }
 
 
